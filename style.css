@@ -1,0 +1,358 @@
+/* Style the header with a grey background and some padding */
+*{
+    font-family: 'Poppins';
+}
+.header {
+    overflow: hidden;
+    background-color:  #ffffff;
+    padding: 10px 5px;
+    border-bottom: 1px solid #3f3f3f;
+    font-weight: 700px;
+    font-size: 60px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 10px;
+  }
+
+  .header a.color{
+        background-color: #FF1A50;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 90px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    margin: 0 60px;
+    justify-content: space-between;
+    float: right;
+    padding: 13px;
+    display: flex;
+  }
+
+  .header-right a{
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+  }
+
+   /* Style the second header links */
+
+.second_header {
+    overflow: hidden;
+    background-color: #ffffff;
+    
+    display: flex;
+  }
+
+  .second_header a{
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 8px;
+    border-radius: 4px;
+    margin: 0 4px;
+  }
+
+  ul {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    
+  }
+
+  li {
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 10px;
+    display: inline-block;
+  }
+
+
+
+  /*banner*/
+.banner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 65vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-size: 1vmax;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner h1{
+    color: #ffffff;
+    position: absolute;
+}
+
+.banner img{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.brands img{
+    width: 30px;
+}
+#santa {
+  position: absolute;
+  animation: fly 50s linear infinite;
+  width: 800px;
+  z-index: 500;
+}
+
+@keyframes fly {
+    0% {
+        transform: rotateZ(5deg) translate(50vw, 10vh);
+      }
+      75% {
+        transform: rotateZ(0deg) translate(50vw, -10vh);
+      }
+      75%{
+        transform: rotateZ(0deg)
+      }
+
+/*   
+        0% {
+           transform: translateY(0px);
+        }
+        100% {
+           transform: translateX(1000px);
+        } */
+
+}
+
+#scene {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  margin-left: -10vw;
+  margin-top: -10vh;
+  width: 120vw;
+}
+.background img {
+  height: 80vh;
+  width: 100%;
+  display: inline-block;
+}
+
+#mountain {
+  height: 35vh;
+  width: 100vw;
+  margin-top: 200px;
+  margin-bottom: -30px; 
+}
+
+/*first_content*/
+.first_content{
+    padding: 6rem;
+    justify-content: space-between;
+}
+.column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+
+    .content {
+        display: grid;
+        align-items: left;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2px;
+    }
+       
+    .content img {
+        padding: 8rem;
+         width: 30px;
+         height: 30px;
+         margin-left: 0;
+    }
+    .text{
+        margin:0;
+    }
+
+
+
+    /*Brands Introduce Section*/
+    .bull{
+        padding-left: 10px;
+        width: 500px;
+        float: left;
+        position: relative;
+    }
+
+    .bear{
+        padding-right: 10px;
+        width: 500px;
+        float: right;
+        position:relative;
+    }
+
+    .brand_intro{
+        padding: 300px;
+    }
+
+    .brand_intro img{
+        display: inline-block;
+        position: absolute;
+    }
+
+
+
+
+
+   /*Instrument table Section*/
+   .instrument_table p, h{
+    margin: 0 50px;
+   }
+    #market{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      #market td, #market th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      
+      #market tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #market tr:hover {background-color: #ddd;}
+      
+      #market th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+      }
+
+
+      /*pagination*/
+      .pagination {
+        display: inline-block;
+      }
+      
+      .pagination a {
+        color: #000000;
+        float: left;
+        padding: 8px 8px;
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        margin: 0 1px;
+      }
+      
+      .pagination a.active {
+        background-color: #FF1A50;
+        color: #ffffff;
+        border: 1px solid #FF1A50;
+      }
+      
+      .pagination a:hover:not(.active) {background-color: #ffffff;}
+      
+      .pagination a:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      
+      .pagination a:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+
+      /*MAKE YOUR MOVE SECTION*/
+      #phone_background1{
+            width:810px;
+            height:200px;
+      }
+      #phone_background2{
+            width:300px;
+            height:400px;
+      }
+      #phone_background3{
+        width:300px;
+        height:200px;
+  }
+
+
+       /*HOW TO GET STARTED SECTION*/
+       .get_started{
+        padding:30px;
+       }
+       .get_started h1{
+        font-size: 10px;
+       }
+
+       .get_start{
+        margin: 100px;
+        font-size: 10px;
+       }
+
+
+      /*FOOTER SECTION*/
+      footer{
+        border-top: 1px solid #d2d2d2;
+        font-size: x-small;
+        padding: 30px;
+      }
+      .footer_left{
+        float:left;
+      }
+
+      .footer_right{
+        float: right;
+        margin: 0 3px;
+      }
+
+
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
